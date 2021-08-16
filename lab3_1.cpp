@@ -16,8 +16,5 @@ void cal(int a){
 int main(){
     int a;
     scanf("%d",&a);
-    if(a<10)
-        printf("%d",a);
-    else
-        cal(a);
+    cal(a);
 }
