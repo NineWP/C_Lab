@@ -21,7 +21,7 @@ int main(){
         scanf("%d",&a[i]);
     
     for(int i=1;i<9;i++){
-        if(a[i-1]%2==1 && a[i+1]%2==1){
+        if(a[i-1]%2!=0 && a[i+1]%2!=0){
             if(c>=1)
                 checkint(b, *(a+i), &c);
             else{
