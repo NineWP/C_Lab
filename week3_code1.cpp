@@ -8,7 +8,7 @@ int main(){
     for(int i=1;i<9;i++){
         if(a[i-1]%2!=0 && a[i+1]%2!=0){
             if(c>=1){
-                for(int j=0;b[j]!='\0';j++){    // check if this number is already print
+                for(int j=0;b[j]!='\0';j++){     // check if this number is already print
                     if(b[j] == a[i])
                          break;
                     else if(b[j]!=a[i] && b[j+1]=='\0'){
