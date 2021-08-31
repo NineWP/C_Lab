@@ -26,10 +26,10 @@ int main()
 	do {
 		if (_kbhit()) {
 			ch = _getch();
-			if (ch == 'a' && x>=1) { draw_ship(--x, y); }
-			if (ch == 'd' && x<=80) { draw_ship(++x, y); }
+			if (ch == 'a' && x >= 1) { draw_ship(--x, y); }
+			if (ch == 'd' && x < 73) { draw_ship(++x, y); }
 			if (ch == 'w' && y >= 1) { erase_ship(x,y); draw_ship(x, --y); }
-			if (ch == 's' && y <= 80) { erase_ship(x,y); draw_ship(x, ++y); }
+			if (ch == 's') { erase_ship(x,y); draw_ship(x, ++y); }
 			fflush(stdin);
 		}
 		Sleep(100);
