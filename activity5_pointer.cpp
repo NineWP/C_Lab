@@ -2,7 +2,7 @@
 
 int main(){
 
-    char str[1000] , *p , k;
+    char str[1000] , *p;
     scanf("%s",str);
     p = str;
     for(int i = 0; *(p+i) != '\0'; i++)
