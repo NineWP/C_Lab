@@ -10,10 +10,10 @@ int main(){
     m1 = num;
     m2 = &num[a*b];
 
-    for(int i = 0; i<a*b; m1++, m2++, i++){
+    for(int i = 0; i<a*b;i++){
         if(i%b==0)
             printf("\n");
-        printf("%d ",*m1+*m2);
+        printf("%d ",*(m1+i)+*(m2+i));
     }
 
 }
