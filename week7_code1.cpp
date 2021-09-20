@@ -1,6 +1,5 @@
 #include<iostream>
 #include<fstream>
-#include<sstream>
 
 using namespace std;
 
@@ -9,10 +8,10 @@ int main(){
 
     ifstream fileA("a.txt");
     fileA >> x >> y;
-    fileA.close();
+    //fileA.close();
 
     ofstream fileB("b.txt");
     fileB << x+y;
-    fileB.close();
+    //fileB.close();
 
 }
