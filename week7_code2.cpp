@@ -4,14 +4,16 @@ using namespace std;
 
 int main(){
 
-    string dataA, dataB;
+    string dataA, dataB, text;
+    cout << "input : ";
     cin >> dataA;
+    cout << "output : ";
+    cin >> dataB; 
 
     ifstream file1(dataA);
-    ofstream file2("C:/temp/data2.txt");
+    ofstream file2(dataB);
 
-    while(getline(file1, dataB)){
-        file2 << dataB << endl;
+    while(getline(file1, text)){
+        file2 << text << endl;
     }
-    cout << "C:/temp/data2" ;
 }
