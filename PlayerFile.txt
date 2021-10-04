@@ -1,0 +1,5 @@
+Alex 1 100
+Sara 2 200
+John 5 500
+Steve 8 800
+Tony 10 1000
