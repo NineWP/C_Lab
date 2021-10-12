@@ -45,6 +45,8 @@ int main(){
     for(int i = 0 ; i<a ; i++){
         printf("\n\nInput : ");
         scanf("%d , %d",&n,&x);
+        if(x>i)
+            x=i+1;
         Insert(n,x);
         Print();
     }
